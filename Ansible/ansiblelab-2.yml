@@ -1,0 +1,16 @@
+# Installs tomcat using Ansible on host
+---
+- hosts: webservers
+  become: true
+  become_user: root
+  tasks:
+  - name: Install tomcat package
+    yum: name=tomcat state=latest
+  - name: start the tomcat service
+    service: name=tomcat state=started
+  - name: Deploy sample.war
+    copy: src=sample.war dest=/usr/share/tomcat/webapps
+    notify: restart tomcat
+  handlers:
+  - name: restart tomcat
+    service: name=tomcat state=restarted 
