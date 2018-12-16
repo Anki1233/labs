@@ -1,0 +1,8 @@
+---
+  - name: Install httpd package
+    yum: name=httpd state=present
+  - name: Start httpd service
+    service: name=httpd state=started
+  - name: Deploy file
+    copy: src=index.html dest={{dest_path}}
+    notify: restart httpd
