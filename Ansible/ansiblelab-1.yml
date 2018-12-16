@@ -1,0 +1,18 @@
+---
+ - hosts: myservers
+   become: true
+   become_user: root
+   vars:
+    src_path: /etc/ansible
+    dest_path: /var/www/html
+   tasks:
+    - name: Install httpd package
+      yum: name=httpd state=present
+    - name: Start httpd service
+      service: name=httpd state=started
+    - name: Deploy httpd service
+      copy: src={{src_path}}/index.html dest={{dest_path}}
+      notify: restart httpd
+   handlers:
+    - name: restart httpd
+      service: name=httpd state=restarted
