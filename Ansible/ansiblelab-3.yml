@@ -1,0 +1,12 @@
+## Lab for Ansible Galaxy to install Jenkins ##
+
+# Execute command -- sudo ansible-galaxy install --roles-path /etc/ansible/roles geerlingguy.jenkins ##
+
+## site.yml
+---
+- roles:
+   geerlingguy.java
+   geerlingguy.jenkins
+
+- vars:
+    jenkins_http_port: 9080
