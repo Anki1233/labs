@@ -1,7 +1,6 @@
 ---  
  - hosts: myservers
-   become: true
-   become_user: root
+   become: Yes
    vars:
     src_path: /etc/ansible
     dest_path: /var/www/html
