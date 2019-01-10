@@ -13,7 +13,7 @@ Please follow below instructions to setup the virtual machines:
 
  3. Download this github repo and extract the zip file.
 
-    https://github.com/quickfixtech/vagrant-env-setup.git
+	https://github.com/devopsmastery/labs.git
 
 4. Download and install GITBashshell (https://git-scm.com/downloads), open git bash shell
       
@@ -21,6 +21,8 @@ Please follow below instructions to setup the virtual machines:
          
 
 5. Restart the machine and press F2 or F10 to go into Bios mode. VT-x/AMD-v virtualization must be enabled in BIOS
+
+
 6.  open git bash shell and go into the unzipped multivagrant directory:
 
      #cd  ~/env-setup
