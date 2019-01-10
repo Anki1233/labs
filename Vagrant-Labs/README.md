@@ -6,6 +6,7 @@ Please follow below instructions to setup the virtual machines:
      https://www.vagrantup.com/downloads.html
 
  2. Download and install virtual box:
+
 Windows:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-Win.exe
 Mac:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-OSX.dmg
 
@@ -15,6 +16,7 @@ Mac:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-OSX
 	https://github.com/devopsmastery/labs.git
 
 4. Download and install GITBashshell (https://git-scm.com/downloads),
+
    Open git bash shell
           cat ~/.ssh/config << ServerAliveInterval 20
 
@@ -22,12 +24,12 @@ Mac:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-OSX
 5. Restart the machine and press F2 or F10 to go into Bios mode.
     VT-x/AMD-v virtualization must be enabled in BIOS
 
-
-6.  open git bash shell and go into the unzipped VagrantLabs directory:
+6. Open git bash shell and go into the unzipped VagrantLabs directory:
 
 7. centos -- just enter vagrant up to spin a CentOs VirtualBox VM
-   Ubuntu -- Do "Vagrant up <hostname>" {Hostname available in nodes.json}
-	 E.g Vagrant up node01.example.com  
+
+	 Ubuntu -- Do "Vagrant up <hostname>" {Hostname available in nodes.json}
+   	 E.g Vagrant up node01.example.com  
 
 
 
