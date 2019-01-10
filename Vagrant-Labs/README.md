@@ -1,37 +1,38 @@
 # env-setup
 Please follow below instructions to setup the virtual machines:
 
-  1. Download and install vagrant:
+  1. Download and install vagrant from Vagrantup.com:
 
-    windows:     https://releases.hashicorp.com/vagrant/2.2.1/vagrant_2.2.1_x86_64.msi
-    mac:  https://releases.hashicorp.com/vagrant/2.2.1/vagrant_2.2.1_x86_64.dmg
+     https://www.vagrantup.com/downloads.html
 
  2. Download and install virtual box:
-      windows:          https://download.virtualbox.org/virtualbox/5.2.22/VirtualBox-5.2.22-126460-Win.exe
-      mac or other:  https://download.virtualbox.org/virtualbox/5.2.22/VirtualBox-5.2.22-126460-OSX.dmg
+Windows:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-Win.exe
+Mac:https://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-OSX.dmg
 
 
  3. Download this github repo and extract the zip file.
 
 	https://github.com/devopsmastery/labs.git
 
-4. Download and install GITBashshell (https://git-scm.com/downloads), open git bash shell
-      
-      cat ~/.ssh/config << ServerAliveInterval 20
-         
-
-5. Restart the machine and press F2 or F10 to go into Bios mode. VT-x/AMD-v virtualization must be enabled in BIOS
+4. Download and install GITBashshell (https://git-scm.com/downloads),
+   Open git bash shell
+          cat ~/.ssh/config << ServerAliveInterval 20
 
 
-6.  open git bash shell and go into the unzipped multivagrant directory:
+5. Restart the machine and press F2 or F10 to go into Bios mode.
+    VT-x/AMD-v virtualization must be enabled in BIOS
 
-     #cd  ~/env-setup
-     #vagrant up
-     
-          
 
- 7. Enter ip address through putty:
-       #vagrant ssh gitlab.example.com
+6.  open git bash shell and go into the unzipped VagrantLabs directory:
+
+7. centos -- just enter vagrant up to spin a CentOs VirtualBox VM
+   Ubuntu -- Do "Vagrant up <hostname>" {Hostname available in nodes.json}
+	 E.g Vagrant up node01.example.com  
+
+
+
+ 8. Enter ip address through putty:
+       #vagrant ssh node01.example.com
          username /password :  vagrant/vagrant
-         Sudo -i
-  
+         sudo -i   -- to login as root and install required software
+			
