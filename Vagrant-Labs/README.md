@@ -1,4 +1,4 @@
-# env-setup
+# Environment Setup
 Please follow below instructions to setup the virtual machines:
 
   1. Download and install vagrant from Vagrantup.com:
