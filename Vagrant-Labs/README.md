@@ -1,7 +1,7 @@
 # Environment Setup
 Please follow below instructions to setup the virtual machines:
 
-  1. Download and install vagrant from [Vagrant site] (http://www.vagrantup.com)!
+  1. Download and install vagrant from [Vagrant](http://www.vagrantup.com)!
   
      https://www.vagrantup.com/downloads.html
 
