@@ -1,15 +1,15 @@
 # DevOps Engineer / Mastery Labs
 
-#Ansible
-Ansible Labs - Installation/Setups and working with ansible playbooks
+# Ansible
+- Ansible Labs - Installation/Setups and working with ansible playbooks
 
 # Docker
-Docker Labs: Use Vagrant-Labs --> CentOS-Docker and Docker-Swarm for installations/Setups with virtualbox
+- Docker Labs: Use Vagrant-Labs --> CentOS-Docker and Docker-Swarm for installations/Setups with virtualbox
 
-#Vagrant
-Vagrant Labs to setup VMs on VirtualBox. Please follow readme given under Vagrant-Labs
+# Vagrant
+- Vagrant Labs to setup VMs on VirtualBox. Please follow readme given under Vagrant-Labs
 
-#Git
+# Git
 Git Commands:
 - `git add`	Adds from working directory to stating area
 - `git commit -m "message"`	Commits file/s from staging to Local repo
@@ -24,7 +24,7 @@ Git Commands:
 - `git revert <commit id>`	to revert all changes done in a particular commit
 - `git reset --hard <commit id>`	will reset the HEAD to a particular commit. All commits post that will be lost.
 
-#Git Branching and merging
+# Git Branching and merging
 - `git checkout -b <branch name>`	creates new branch and moves HEAD to new branch
 - `git checkout <branch>`	to switch branches
 - `git merge <branch>`	merges branch to the one we are on
